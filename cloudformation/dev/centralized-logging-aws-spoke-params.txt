@@ -1,0 +1,7 @@
+ClusterSize	Small	
+DemoSubnet	10.0.0.32/28	
+DemoTemplate	Yes	
+DemoVPC	10.0.0.0/26	
+ESDomain	search-centralized-logging-c5vynsghfjx6g5wyerrtfoy2py.us-east-1.es.amazonaws.com	
+MasterRole	arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55	
+

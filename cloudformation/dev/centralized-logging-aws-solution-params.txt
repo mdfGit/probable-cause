@@ -1,0 +1,14 @@
+ClusterSize	Small	
+DemoSubnet	10.0.0.32/28	
+DemoTemplate	Yes	
+DemoVPC	10.0.0.0/26	
+DOMAINNAME	centralized-logging	
+KeyName	mark-ferry-IAM-keypair	
+ProxyPass	****	
+ProxyUsername	user_kibana	
+RetypePass	****	
+SpokeAccounts	120270496361	
+SSHLocation	10.0.0.0/26	
+Subnet1	10.0.0.16/28	
+Subnet2	10.0.0.32/28	
+VPCCidrP	10.0.0.0/26
