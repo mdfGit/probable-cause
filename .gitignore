@@ -1,0 +1,4 @@
+*.pwd
+
+lambdas/logstreamer/node_modules*
+lambdas/logstreamer/node_modules/*
