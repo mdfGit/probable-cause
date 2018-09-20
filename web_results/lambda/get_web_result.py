@@ -16,10 +16,7 @@ import argparse
 import traceback
 import inspect
 import boto3
-from datetime import datetime, time, timezone
-from dateutil import utils
-from dateutil.parser import parse
-import os
+
 
 __author__ = 'Mark Ferry'
 
@@ -33,7 +30,6 @@ def initialize():
 
     global client
     client = boto3.client('dynamodb')
-
 
     if run_mode == 'local':
         print("LOCAL RUN: Setting environment variables locally.")
@@ -67,10 +63,24 @@ def get_application_status():
                     'S': '1'
                 }
             }
-        )    
+        )
 
-        print("10")
-        return print(response)
+        print(response)
+
+        my_item=response['Item']
+        app=my_item['ApplicationId']['S']
+        stat=my_item['Status']['S']
+        prob=my_item['ProbableCauseSummary']['S']
+
+        my_response="{ApplicationId: " + app + "}, {Status: " + stat + "}, {ProbableCauseSummary: " + prob + "}"
+        print(my_response)
+
+        print("{Status: 200}, body: hello")
+        #return my_response
+        #{ApplicationId: 1}, {Status: active}, {ProbableCauseSummary: nothing}
+        #return "Status: 200, body: hello"
+        #return "{statusCode: 200,body: hello}"
+        return "OK"
 
     except Exception as error:
         print ("An error occurred in: {}: {}".format(inspect.stack()[0][3], error))
