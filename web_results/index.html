@@ -1,0 +1,149 @@
+<html>
+<head>
+	<script src="/scripts/jquery-3.3.1.min.js"></script>
+	<script src="/scripts/amazon-cognito-identity.min.js"></script>
+    <!-- optional: only if you use other AWS services -->
+    <script src="/scripts/aws-sdk-2.317.0.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  Probable Cause 
+
+</body>
+<script>
+//AWS.config.update({region: 'us-east-1'});
+//AWS.config.credentials = new AWS.CognitoIdentityCredentials({IdentityPoolId: '9089f6fa-d8ef-4ae5-bd62-7152485904df'});
+
+	window.LOG_LEVEL = 'DEBUG';	
+	console.log("10")	
+
+/*
+    var authenticationData = {
+        Username : 'mdf',
+        Password : 'p2ssw0rd',
+    };
+    var authenticationDetails = new AmazonCognitoIdentity.AuthenticationDetails(authenticationData);
+
+    console.log("20")	
+    var poolData = {
+        UserPoolId : 'us-east-1_CppWa53dH', // Your user pool id here
+        ClientId : '5etqlkt0j7809etvncfqgg0b95' // Your client id here
+    };
+    var userPool = new AmazonCognitoIdentity.CognitoUserPool(poolData);
+    
+    console.log("30")	
+    var userData = {
+        Username : 'mdf',
+        Pool : userPool
+    };
+    var cognitoUser = new AmazonCognitoIdentity.CognitoUser(userData);
+    
+    console.log("40")	
+    cognitoUser.authenticateUser(authenticationDetails, {
+        onSuccess: function (result) {
+        	console.log("50")	
+            var accessToken = result.getAccessToken().getJwtToken();
+
+            //POTENTIAL: Region needs to be set if not already set previously elsewhere.
+            AWS.config.region = 'us-east-1';
+
+            AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+                IdentityPoolId : '9089f6fa-d8ef-4ae5-bd62-7152485904df', // your identity pool id here
+                Logins : {
+                    // Change the key below according to the specific region your user pool is in.
+                    'cognito-idp.us-east-1.amazonaws.com/us-east-1_CppWa53dH' : result.getIdToken().getJwtToken()
+                }
+            });
+
+			console.log("60")
+            
+            //refreshes credentials using AWS.CognitoIdentity.getCredentialsForIdentity()
+            AWS.config.credentials.refresh((error) => {
+                if (error) {
+                     console.error(error);
+                } else {
+                     // Instantiate aws sdk service objects now that the credentials have been updated.
+                     // example: var s3 = new AWS.S3();
+                     console.log('Successfully logged!');
+                }
+            });
+        },
+
+        onFailure: function(err) {
+        	console.log(err.message)
+            alert(err.message || JSON.stringify(err));
+        },
+
+    });
+  */
+
+ /* 	
+
+	console.log("100")
+	AWS.config.region = 'us-east-1';
+
+	AWS.config.credentials = new AWS.CognitoIdentityCredentials({IdentityPoolId : '9089f6fa-d8ef-4ae5-bd62-7152485904df'}); // your identity pool id here
+
+	//new
+	AWSCognito.config.region = 'us-east-1';
+	AWSCognito.config.credentials = new AWS.CognitoIdentityCredentials({IdentityPoolId: '9089f6fa-d8ef-4ae5-bd62-7152485904df'});
+
+	AWSCognito.config.update({accessKeyId: 'anything', secretAccessKey: 'anything'})
+	//end new
+
+	*/	
+
+    # TODO: Use Cognito - until then, these creds are locked down
+	AWS.config.update({accessKeyId: 'AKIAIOJGTU7JLWTZS5IA', secretAccessKey: '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'});
+
+    console.log("200")
+ 	var lambda = new AWS.Lambda({region: 'us-east-1', apiVersion: '2015-03-31'});
+	// create JSON object for parameters for invoking Lambda function
+	var pullParams = {
+	  FunctionName : 'GetWebResult',
+	  InvocationType : 'RequestResponse',
+	  LogType : 'None'
+	};
+
+	console.log("300")
+	// create variable to hold data returned by the Lambda function
+	var pullResults;
+
+	lambda.invoke(pullParams, function(error, data) {
+	  if (error) {
+	    prompt(error);
+	  } else {
+	  	console.log("data: " + data)
+	    pullResults = JSON.parse(data.Payload);
+
+		process(pullResults);
+	  }
+	});
+
+	function process(jsonResults){
+		console.log("400")
+
+		console.log("pullResults: " + jsonResults);
+			
+	}
+	
+
+
+
+	// check results to see if this spin is a winner
+	//if (pullResults.isWinner) {
+	  //prompt("Winner!");
+	//}
+   
+
+</script>
+</html>
