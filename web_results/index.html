@@ -1,5 +1,6 @@
 <html>
 <head>
+    <meta name="robots" content="noindex" />
 	<script src="/scripts/jquery-3.3.1.min.js"></script>
 	<script src="/scripts/amazon-cognito-identity.min.js"></script>
     <!-- optional: only if you use other AWS services -->
@@ -13,18 +14,13 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</head>
-<body>
 
-  Probable Cause 
-
-</body>
-<script>
+    <script>
 //AWS.config.update({region: 'us-east-1'});
 //AWS.config.credentials = new AWS.CognitoIdentityCredentials({IdentityPoolId: '9089f6fa-d8ef-4ae5-bd62-7152485904df'});
 
-	window.LOG_LEVEL = 'DEBUG';	
-	console.log("10")	
+    window.LOG_LEVEL = 'DEBUG'; 
+    console.log("10")   
 
 /*
     var authenticationData = {
@@ -33,24 +29,24 @@
     };
     var authenticationDetails = new AmazonCognitoIdentity.AuthenticationDetails(authenticationData);
 
-    console.log("20")	
+    console.log("20")   
     var poolData = {
         UserPoolId : 'us-east-1_CppWa53dH', // Your user pool id here
         ClientId : '5etqlkt0j7809etvncfqgg0b95' // Your client id here
     };
     var userPool = new AmazonCognitoIdentity.CognitoUserPool(poolData);
     
-    console.log("30")	
+    console.log("30")   
     var userData = {
         Username : 'mdf',
         Pool : userPool
     };
     var cognitoUser = new AmazonCognitoIdentity.CognitoUser(userData);
     
-    console.log("40")	
+    console.log("40")   
     cognitoUser.authenticateUser(authenticationDetails, {
         onSuccess: function (result) {
-        	console.log("50")	
+            console.log("50")   
             var accessToken = result.getAccessToken().getJwtToken();
 
             //POTENTIAL: Region needs to be set if not already set previously elsewhere.
@@ -64,7 +60,7 @@
                 }
             });
 
-			console.log("60")
+            console.log("60")
             
             //refreshes credentials using AWS.CognitoIdentity.getCredentialsForIdentity()
             AWS.config.credentials.refresh((error) => {
@@ -79,71 +75,98 @@
         },
 
         onFailure: function(err) {
-        	console.log(err.message)
+            console.log(err.message)
             alert(err.message || JSON.stringify(err));
         },
 
     });
   */
 
- /* 	
+ /*     
 
-	console.log("100")
-	AWS.config.region = 'us-east-1';
+    console.log("100")
+    AWS.config.region = 'us-east-1';
 
-	AWS.config.credentials = new AWS.CognitoIdentityCredentials({IdentityPoolId : '9089f6fa-d8ef-4ae5-bd62-7152485904df'}); // your identity pool id here
+    AWS.config.credentials = new AWS.CognitoIdentityCredentials({IdentityPoolId : '9089f6fa-d8ef-4ae5-bd62-7152485904df'}); // your identity pool id here
 
-	//new
-	AWSCognito.config.region = 'us-east-1';
-	AWSCognito.config.credentials = new AWS.CognitoIdentityCredentials({IdentityPoolId: '9089f6fa-d8ef-4ae5-bd62-7152485904df'});
+    //new
+    AWSCognito.config.region = 'us-east-1';
+    AWSCognito.config.credentials = new AWS.CognitoIdentityCredentials({IdentityPoolId: '9089f6fa-d8ef-4ae5-bd62-7152485904df'});
 
-	AWSCognito.config.update({accessKeyId: 'anything', secretAccessKey: 'anything'})
-	//end new
+    AWSCognito.config.update({accessKeyId: 'anything', secretAccessKey: 'anything'})
+    //end new
 
-	*/	
+    */  
 
-    # TODO: Use Cognito - until then, these creds are locked down
-	AWS.config.update({accessKeyId: 'AKIAIOJGTU7JLWTZS5IA', secretAccessKey: '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'});
+
+    // TODO: Use Cognito - until then, these creds are locked down
+    AWS.config.update({accessKeyId: 'AKIAIOJGTU7JLWTZS5IA', secretAccessKey: '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', region: 'us-east-1'});
 
     console.log("200")
- 	var lambda = new AWS.Lambda({region: 'us-east-1', apiVersion: '2015-03-31'});
-	// create JSON object for parameters for invoking Lambda function
-	var pullParams = {
-	  FunctionName : 'GetWebResult',
-	  InvocationType : 'RequestResponse',
-	  LogType : 'None'
-	};
 
-	console.log("300")
-	// create variable to hold data returned by the Lambda function
-	var pullResults;
+    /*
+    var lambda = new AWS.Lambda({region: 'us-east-1', apiVersion: '2015-03-31'});
+    // create JSON object for parameters for invoking Lambda function
+    var pullParams = {
+      FunctionName : 'GetWebResult2',
+      InvocationType : 'RequestResponse',
+      LogType : 'None'
+    };
 
-	lambda.invoke(pullParams, function(error, data) {
-	  if (error) {
-	    prompt(error);
-	  } else {
-	  	console.log("data: " + data)
-	    pullResults = JSON.parse(data.Payload);
+    console.log("300")
+    // create variable to hold data returned by the Lambda function
+    var pullResults;
 
-		process(pullResults);
-	  }
-	});
+    lambda.invoke(pullParams, function(error, data) {
+      if (error) {
+        prompt(error);
+      } else {
+        console.log("data: " + data)
+        pullResults = JSON.parse(data.Payload);
 
-	function process(jsonResults){
-		console.log("400")
+        process(pullResults);
+      }
+    });
 
-		console.log("pullResults: " + jsonResults);
-			
-	}
-	
+    function process(jsonResults){
+        console.log("400")
 
+        //console.log(jsonResults.Item.ApplicationId);    
 
+        console.log("pullResults: " + jsonResults);
+            
+    }
+    */
 
-	// check results to see if this spin is a winner
-	//if (pullResults.isWinner) {
-	  //prompt("Winner!");
-	//}
-   
+    var docClient = new AWS.DynamoDB.DocumentClient()
+    
+    function queryData() {
+        document.getElementById('textarea').innerHTML = "...";
 
+        var params = {
+            TableName: 'ProbableCauseMaster', 
+            FilterExpression : 'ApplicationId = :id',
+            ExpressionAttributeValues : {':id' : '1'}
+        };
+
+        docClient.scan(params, function(err, data) {
+            if (err) {
+                document.getElementById('textarea').innerHTML += "Unable to query. Error: " + "\n" + JSON.stringify(err, undefined, 2);
+            } else {
+                document.getElementById('textarea').innerHTML += "Querying... " + "\n" + JSON.stringify(data, undefined, 2);
+            }
+        });
+    }
 </script>
+</head>
+<body>
+
+  Probable Cause 
+
+    <input id="queryData" type="button" value="Query" onclick="queryData();" />
+    <br><br>
+    <textarea readonly id= "textarea" style="width:400px; height:400px"></textarea>
+
+</body>
+
 </html>
