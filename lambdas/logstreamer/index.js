@@ -57,6 +57,9 @@ function handler(input, context, callback) {
     // parse the input from JSON
     let awslogsData = JSON.parse(buffer.toString('utf8'));
 
+    //New: also send to Kinesis
+    sendToKinesis(awslogsData);  
+
     // transform the input to Elasticsearch documents
     let elasticsearchBulkData = transform(awslogsData);
 
@@ -113,6 +116,51 @@ function handler(input, context, callback) {
     });
 
   });
+
+}
+
+/**
+ * Send a copy to Kinesis 
+ */
+function sendToKinesis(payload){
+  console.log("10");
+
+  var kinesis = new AWS.Kinesis();
+
+  console.log("20");
+
+  if (payload.messageType === 'CONTROL_MESSAGE') {
+    return null;
+  }
+
+  console.log("30");
+
+  console.log("payload: " + payload);
+  
+  console.log("31");
+
+  console.log("payload: " + JSON.stringify(payload));
+
+  if (payload.logStream === 'eni-07fd656c9a14b7e75-all') {
+
+    var params = {
+      Data: JSON.stringify(payload) /* Strings will be Base-64 encoded on your behalf */, /* required */
+      PartitionKey: 'partition-' + 'eni-07fd656c9a14b7e75-all', /* required */
+      StreamName: 'BotoDemo', /* required */
+      //ExplicitHashKey: 'STRING_VALUE',
+      //SequenceNumberForOrdering: 'STRING_VALUE'
+    };
+
+    console.log("40");
+
+    kinesis.putRecord(params, function(err, data) {
+      if (err) console.log("45 err: " + err, err.stack); // an error occurred
+      else     console.log("45 data: " + JSON.stringify(data));           // successful response
+    });
+
+    console.log("50");
+
+  }
 
 }
 

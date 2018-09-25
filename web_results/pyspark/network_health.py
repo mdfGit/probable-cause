@@ -73,6 +73,8 @@ if __name__ == "__main__":
     counts = lines.flatMap(lambda line: line.split(" ")) \
         .map(lambda word: (word, 1)) \
         .reduceByKey(lambda a, b: a+b)
+    
+    print("count...")
     counts.pprint()
 
     #print("counts: " + counts.pprint())
