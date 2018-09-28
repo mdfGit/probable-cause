@@ -64,17 +64,34 @@ if __name__ == "__main__":
     sc = SparkContext(appName="PythonStreamingKinesisNetworkHealthAsl")
     ssc = StreamingContext(sc, 1)
     appName, streamName, endpointUrl, regionName = sys.argv[1:]
+
+    print("appName: " + appName)
+    print("streamName: " + streamName)
+    print("endpointUrl: " + endpointUrl)
+    print("regionName: " + regionName)
+
     lines = KinesisUtils.createStream(
         ssc, appName, streamName, endpointUrl, regionName, InitialPositionInStream.LATEST, 2)
     
     #print(lines)
     print("hello1")
 
+    #lines.collect().foreach(print)
+
     counts = lines.flatMap(lambda line: line.split(" ")) \
         .map(lambda word: (word, 1)) \
         .reduceByKey(lambda a, b: a+b)
-    
-    print("count...")
+
+    print("lines.count().pprint()")
+    lines.count().pprint()    
+
+    print("lines.count()")    
+    print(lines.count())    
+
+    print("dir(counts)")
+    print(dir(counts))
+
+    print("counts.pprint()")
     counts.pprint()
 
     #print("counts: " + counts.pprint())
