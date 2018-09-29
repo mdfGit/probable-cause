@@ -160,6 +160,23 @@ function sendToKinesis(payload){
 
     console.log("50");
 
+  } else if (payload.logStream === "120270496361_CloudTrail_us-east-1"){
+      var params = {
+      Data: JSON.stringify(payload) /* Strings will be Base-64 encoded on your behalf */, /* required */
+      PartitionKey: 'partition-' + '120270496361_CloudTrail_us-east-1', /* required */
+      StreamName: 'kinesis-stream', /* required */
+      //ExplicitHashKey: 'STRING_VALUE',
+      //SequenceNumberForOrdering: 'STRING_VALUE'
+    };
+
+    console.log("400");
+
+    kinesis.putRecord(params, function(err, data) {
+      if (err) console.log("450 err: " + err, err.stack); // an error occurred
+      else     console.log("450 data: " + JSON.stringify(data));           // successful response
+    });
+
+    console.log("500");
   }
 
 }

@@ -1,0 +1,40 @@
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "Root",
+        "principalId": "120270496361",
+        "arn": "arn:aws:iam::120270496361:root",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJU5LHQDXO7",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-09-29T17:31:40Z"
+            }
+        },
+        "invokedBy": "signin.amazonaws.com"
+    },
+    "eventTime": "2018-09-29T18:38:40Z",
+    "eventSource": "ec2.amazonaws.com",
+    "eventName": "RebootInstances",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "66.31.43.60",
+    "userAgent": "signin.amazonaws.com",
+    "requestParameters": {
+        "instancesSet": {
+            "items": [
+                {
+                    "instanceId": "i-05dbfd80eb2d73bd6"
+                }
+            ]
+        }
+    },
+    "responseElements": {
+        "requestId": "00162039-0264-4992-adde-b0ce4423d61b",
+        "_return": true
+    },
+    "requestID": "00162039-0264-4992-adde-b0ce4423d61b",
+    "eventID": "efe8241a-f2fa-4f9c-92c6-51be9a3fff06",
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}

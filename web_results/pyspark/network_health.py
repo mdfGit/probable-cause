@@ -78,9 +78,14 @@ if __name__ == "__main__":
 
     #lines.collect().foreach(print)
 
-    counts = lines.flatMap(lambda line: line.split(" ")) \
-        .map(lambda word: (word, 1)) \
-        .reduceByKey(lambda a, b: a+b)
+    #new
+    parsed = lines.flatMap(lambda line: line.split(" "))
+    parsed.count().map(lambda x:'data in this batch: %s' % x).pprint()
+    #new stop
+
+    #counts = lines.flatMap(lambda line: line.split(" ")) \
+    #    .map(lambda word: (word, 1)) \
+    #    .reduceByKey(lambda a, b: a+b)
 
     print("lines.count().pprint()")
     lines.count().pprint()    
@@ -88,11 +93,11 @@ if __name__ == "__main__":
     print("lines.count()")    
     print(lines.count())    
 
-    print("dir(counts)")
-    print(dir(counts))
+    #print("dir(counts)")
+    #print(dir(counts))
 
-    print("counts.pprint()")
-    counts.pprint()
+    #print("counts.pprint()")
+    #counts.pprint()
 
     #print("counts: " + counts.pprint())
     print("hello2")
