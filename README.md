@@ -5,6 +5,27 @@ A framework to classify enterprise cloud system and application health to enable
 
 ![alt text](architecture.png "Probable Cause Architecture")
 
+## Aggregation
+*AWSConfig Events to CloutWatch Logs*
+
+*CloudTrail Events to Cloutwatch Logs*
+
+*VPC Flow Logs Events to Cloudwatch Logs*
+
+*Cloudwatch for Apps to Cloudwatch Logs*
+
+## Distribution
+*Cloudwatch Subscription to Elastic Search*
+
+*Cloudwatch Subscription to Kinesis
+
+## Analysis
+*Kinesis Stream to Spark*
+
+## Dashboard 
+*DynamoDB updates front end display*
+
+
 ## Demo Assets (internal only)
 
 Jenkins
@@ -38,6 +59,6 @@ http://insight-probable-cause-web.s3-website-us-east-1.amazonaws.com/
 *Website Results - Static S3 and Lambda*
 > Probable Cause > web_results
 
-*Spark*
+*Contextual Analysis*
 > Probable Cause > pyspark
 
