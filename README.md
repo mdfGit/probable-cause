@@ -33,9 +33,11 @@ http://insight-probable-cause-web.s3-website-us-east-1.amazonaws.com/
 > Probable Cause > Cloudformation > Dev
 
 *CloudWatch Log Subscriptions*
-> Probable Cause > lambdas 
+> Probable Cause > lambdas > logstreamer
 
 *Website Results - Static S3 and Lambda*
 > Probable Cause > web_results
 
+*Spark*
+> Probable Cause > pyspark
 
