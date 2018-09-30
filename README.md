@@ -17,7 +17,7 @@ A framework to classify enterprise cloud system and application health to enable
 ## Distribution
 *Cloudwatch Subscription to Elastic Search*
 
-*Cloudwatch Subscription to Kinesis
+*Cloudwatch Subscription to Kinesis*
 
 ## Analysis
 *Kinesis Stream to Spark*
@@ -39,14 +39,6 @@ http://ec2-34-198-7-204.compute-1.amazonaws.com:8080/
 
 Probable Cause
 http://insight-probable-cause-web.s3-website-us-east-1.amazonaws.com/
-
-## Demo Steps
-
-*Reboot Jenkins*
-
-*Change Security Group on Jenkins*
-
-*Check Probable Cause*
 
 ## Code Layout
 
