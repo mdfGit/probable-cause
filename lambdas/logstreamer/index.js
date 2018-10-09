@@ -15,12 +15,20 @@
  * @author Solution Builders
  */
 
+/*
+* Altered logstreamer lambda, zipped from root directory (where package.json resides)… uploaded to lambda directly
+* >zip -r updated.zip *
+*/
+
 'use strict';
 
 let https = require('https');
 let zlib = require('zlib');
 let crypto = require('crypto');
 let AWS = require('aws-sdk');
+AWS.config.update({region: 'us-east-1'});
+// Create the DynamoDB service object
+var ddb = new AWS.DynamoDB({apiVersion: '2012-08-10'});
 let moment = require('moment');
 const MetricsHelper = require('./lib/metrics-helper.js');
 
@@ -56,6 +64,9 @@ function handler(input, context, callback) {
 
     // parse the input from JSON
     let awslogsData = JSON.parse(buffer.toString('utf8'));
+
+    //New: also send to rulesengine
+    rulesengine(awslogsData); 
 
     //New: also send to Kinesis
     sendToKinesis(awslogsData);  
@@ -120,6 +131,133 @@ function handler(input, context, callback) {
 }
 
 /**
+  Cloudtrail event
+**/
+function cloudtrailevent(payload){
+
+    console.log("ct_trace1");
+    console.log("ct_trace1 payload: " + JSON.stringify(payload));
+
+    var arrayOfLog = "";
+    var sourceIP = "";
+    var targetIP = "";
+    var httpcode = "";
+
+    payload.logEvents.forEach(function(logEvent) {
+      let timestamp = new Date(1 * logEvent.timestamp);
+
+      console.log("ct_trace2 - logEvent.message");
+      console.log(logEvent.message);
+
+      let message_json = JSON.parse(logEvent.message);  
+
+      console.log("ct_trace2 - message_json.eventName: " + message_json.eventName);
+
+      if (message_json["eventName"] == "RebootInstances"){
+        console.log("ct_trace3 reboot");  
+
+        var params = {
+          TableName: 'ProbableCauseMaster',
+          Item: {
+            'ApplicationId' : {S: '1'},
+            'ProbableCauseSummary' : {S: 'RB'},
+          }
+        };
+
+        // Call DynamoDB to add the item to the table
+        ddb.putItem(params, function(err, data) {
+          if (err) {
+            console.log("DYNA Error", err);
+          } else {
+            console.log("DYNA Success", data);
+          }
+        });
+      } 
+    });
+}
+
+/**
+  Network event
+**/
+function networkevent(payload){
+
+    console.log("trace1");
+
+    var arrayOfLog = "";
+    var sourceIP = "";
+    var targetIP = "";
+    var httpcode = "";
+
+    payload.logEvents.forEach(function(logEvent) {
+      let timestamp = new Date(1 * logEvent.timestamp);
+
+      console.log("trace2 - preJson");
+      console.log(logEvent.message);  
+
+      arrayOfLog = logEvent.message.split(" ");
+      sourceIP = arrayOfLog[3];
+      targetIP = arrayOfLog[4];
+      httpcode = arrayOfLog[12];   
+
+      console.log("sip: " + sourceIP);
+      console.log("tip: " + targetIP);
+      console.log("hcode: " + httpcode);
+
+      // If a REJECT to the target is on my IP
+      if (sourceIP == '65.204.59.226' && targetIP == '10.0.0.41' && httpcode == 'REJECT'){
+
+        var params = {
+          TableName: 'ProbableCauseMaster',
+          Item: {
+            'ApplicationId' : {S: '1'},
+            'ProbableCauseSummary' : {S: 'SG'},
+          }
+        };
+
+        // Call DynamoDB to add the item to the table
+        ddb.putItem(params, function(err, data) {
+          if (err) {
+            console.log("DYNA Error", err);
+          } else {
+            console.log("DYNA Success", data);
+          }
+        });
+
+      }
+
+      let jsonSubString = extractJson(logEvent.message);
+      if (jsonSubString !== null) {
+        message_json = JSON.parse(jsonSubString);
+
+        console.log("trace - postJson");
+        console.log(message_json); 
+        console.log(JSON.stringify(message_json));
+
+      } else {
+        
+        console.log("failed to convert json");
+      }
+    });
+
+}
+
+/** 
+  Rules Engine
+**/
+function rulesengine(payload){
+  console.log("trace0");
+  var message_json = "";
+
+  if (payload.logStream === 'eni-07fd656c9a14b7e75-all') {
+    networkevent(payload);
+  } else if (payload.logStream === '120270496361_CloudTrail_us-east-1'){
+    cloudtrailevent(payload);
+  }
+
+  console.log("trace end")
+}
+
+/**
  * Send a copy to Kinesis 
  */
 function sendToKinesis(payload){
@@ -141,7 +279,7 @@ function sendToKinesis(payload){
 
   console.log("payload: " + JSON.stringify(payload));
 
-  if (payload.logStream === 'eni-07fd656c9a14b7e75-all') {
+  //if (payload.logStream === 'eni-07fd656c9a14b7e75-all') {
 
     var params = {
       Data: JSON.stringify(payload) /* Strings will be Base-64 encoded on your behalf */, /* required */
@@ -160,24 +298,7 @@ function sendToKinesis(payload){
 
     console.log("50");
 
-  } else if (payload.logStream === "120270496361_CloudTrail_us-east-1"){
-      var params = {
-      Data: JSON.stringify(payload) /* Strings will be Base-64 encoded on your behalf */, /* required */
-      PartitionKey: 'partition-' + '120270496361_CloudTrail_us-east-1', /* required */
-      StreamName: 'kinesis-stream', /* required */
-      //ExplicitHashKey: 'STRING_VALUE',
-      //SequenceNumberForOrdering: 'STRING_VALUE'
-    };
-
-    console.log("400");
-
-    kinesis.putRecord(params, function(err, data) {
-      if (err) console.log("450 err: " + err, err.stack); // an error occurred
-      else     console.log("450 data: " + JSON.stringify(data));           // successful response
-    });
-
-    console.log("500");
-  }
+  //}
 
 }
 

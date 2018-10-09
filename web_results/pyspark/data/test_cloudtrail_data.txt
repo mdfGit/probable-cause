@@ -1,0 +1,2098 @@
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUZEELSFPK",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T10:12:54Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:30:44Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJUVRBE4MGP",
+            "expiration": "Oct 2, 2018 6:30:44 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDFqBcpanQ08TlCj2XCL6ARhEist+UbUtgNRXHOBthOSwUZap3C3siTMFGaHVakOidY+M+EvXFjFP29p73Q7Jam5PqRa73tK0r2WYIRnKgd3y0nj19XPkUm8Srhmcfs9SCFagdpje9LMjPxOwUabhZhBMVBsxu1Yo8HbrCKwnQQr0/wvIUO9t99aEuKZHPb+CyhciLYM7l01Rh2whithOBD+EMQV0KzbYdzFeqX/egHrnlyuIF5LT6IYWyFPGqX+yDcSbBMoVgg2erfPN6+XIuYlqXn2nUkQpkO0kXcGzzjqV9Q3WqyP+BvGjG+Lti0fp8sDQTMWx5IH2pZgpn/CTqEtO2zQNqfcxP20oxNbO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "e481cb9f-c668-11e8-800c-6bb8c330ce87",
+    "eventID": "6de2df5d-1296-4d3a-b0c4-3418a76722fc",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUZEELSFPK",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T10:12:54Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:30:42Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJURGS5FULG",
+            "expiration": "Oct 2, 2018 6:30:42 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDGa4ZJLQx19o3rJEiyL6Ab7ET4DASqhxDcBldI1cpCm7JIz/5c2T07Fl8VIKvRIHsnh4HjaybsDdlbxkciM0882Xc3BGgC1Fat8GvVdNOxTiACR5gXUazhs37nxCJU7hOEn9K+JtWB1Kn4xrbNah2jnXhvHK04ewNNlCRmayB/TL954V/Ny78HYtiYAXD9S7Iz0UVWsKK7G2gOxUQd9bwOy+gcE7NRCdEylPfCyvM8JL/UipETsEmKVtO6hTitnmm1m9loQG55BV7pXXC5360AyfDbcUUtuRl8KPf2LlhmbZRFEnYFyVxw5/1dAUD/DbKMZ/gYcqgtCB1AmdPXhO9WAglal6nZRXGZQowtbO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "e32c0019-c668-11e8-800c-6bb8c330ce87",
+    "eventID": "d4a859a3-e3eb-433c-b17e-56a3e0a02a31",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUZEELSFPK",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T10:12:54Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:30:55Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJUYCJJHTFS",
+            "expiration": "Oct 2, 2018 6:30:55 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDJMMsGwJkRyvCaZ1TSL6AaP3SONpFtBMqQbyZcUYIiUdq5Ptxx+qL/6btZtD8i4MuR+rRypLtAJfA90W3Qj+Xi7ZV3JGrtuzrF741FQxpM3CK1wckExGABpV7ot9BEn/8GSxv6u7tGQcQeVy4MeM7VEtXmdPluKNGDBAs5DXHnZBkG0CJ95etyRsbmA9Lt7TGWdNZuYk0DjMtTFNQHxxBpZs456D3h3MsfKC+O5abAavT0dKjhKDpuYtaEvkeqPA/+kEtyzqpprCiYvxN9+3vy+gQPSU0I3hfBbVBQeO6FjZhw+MO04rsLks7XBc9CnnjUfn9V37TVkleB9sOCBXbI/NI1XxrBzhNLgoz9bO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "eb16855c-c668-11e8-a217-edcc6a479c90",
+    "eventID": "769c0f22-8fd7-4365-8dbd-28233cd7a629",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUZEELSFPK",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T10:12:54Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:30:38Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJUTLXPNHOA",
+            "expiration": "Oct 2, 2018 6:30:38 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDC6H1oXDHN7xaUqu0yL6AYmX5Dniw/3L0lwYS6HATNiCz/Fch6DmaCBV09HllJxQQyoOonitCEJccw5h/aHrXaHI2x0YqPjG98Qpb6ffGkj6mFSwHKjD79s+Zev20uhXgZ1JvBnaTjT1gf8htv43DsgRLyKPe5jKbnHK7bjphYagFLf1Xncu2Nxc0IL2cCtZLC+RjWobvias3Ah5yB7wxu/DOaXtnvqGmREJQCrNeMusJVeCD15x3ieKZ6vxRupz3LWujthkqD2/YGob0nOusHSb1cpJCieexNJQI8HfvJg+zDq0CxjoQJnV1wi21A4hYElZRoMAox7iDULuu6AcejMXDZezX6cAg2oovtbO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "e109e2ef-c668-11e8-9dd3-07b86ee442fe",
+    "eventID": "e190abe0-2972-4ea3-bca0-7a84674cd5ac",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUZEELSFPK",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T10:12:54Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:30:48Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJUVMC5R26D",
+            "expiration": "Oct 2, 2018 6:30:48 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDPCLI+uyUOo4VPiQTyL6AWAVSE3zgku8cAzf1Yr1xhCB4MnhC7rUIEuJsKTHU3fMx4N+JpoIjw4W6xlFF0pS0YOJOk/Vo7O3zQC+FAKWZ1DxJ3qqLlEG902XKeIeFva9zXHF3MA5HUoWY0VhXNNcBxfpVAlYuuhhBFkvFV1HntARLSKA0WKKc0xOxQoFQxIQkXHaLhhw5eKVEU/qQuW1U2LpRFjnO2cLn8X23+7amFhcS9wnWp7cZeLdYWYY5o3qzbWGOJzw/HCvL98Fzm25HEXtzOq47U4gIOIf2L5pg/aBbJGk9C8DqbDMxKsgRi5eFiCzjMXkqoLZtJAG3cjdWrsjgJ91NNjSgKYoyNbO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "e6d5587d-c668-11e8-abbc-7f10241d00ef",
+    "eventID": "e4dd8764-7e22-4083-b963-77c9cf3e741c",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUZEELSFPK",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T10:12:54Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:31:04Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJURVVHFT7K",
+            "expiration": "Oct 2, 2018 6:31:04 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDMeor+/oHvITQkMhpiL6AX7NBib3ajd+ileocI/BCmYnSGWNCB82D8O1XS7ncnpD1je9CCQQiudAtG865mIbicwPZrJEH/Mi1es8i7Oe3qz2UuceqLtFyn1FQq96S1G4aUkPWUq/YjfI0/nMBH+RFKG7VB8/cgDuMSCm7IUnd3RicGZJTHf9mh0V+kJf97NFlu10ClSmt2n2e+CsL+21TAguAcGUxF0Y/sY0Jeo1YEFciByXW/PWjYzQQUwr1EoBFOAVdC5aACwSRxD4/BL8E96G99WaxBHCumVhTSyY/9nhEdjHlXZWhrkJQcyu+YQa0HK61gltI5GKeX62kePDrPh2bC+eL1ngylMo2NbO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "f0129cb6-c668-11e8-ac9b-5fc9896d014c",
+    "eventID": "daf089e9-70b9-4d88-9481-55848de6d0de",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUZEELSFPK",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T10:12:54Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:30:33Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJU64NDE3MR",
+            "expiration": "Oct 2, 2018 6:30:33 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDDIAkCioUmRYS32pTyL6AQY0K+fqV9mCVOvquzS1t8JbT/6UAKGaIPqnLWNuyNaPTMkus/okzZaMRlco4cN6n3KAO4lXMkQb1nyHfTbvwPhzUcuQUWbO7/kubRpgDHxQjDqJq0ChMEcOkyWrhkp1MbutvrX2MAZgwLdvxT2JUzGYlDSYRqeq1+Vz1+D18bRl2hs+ZDa3cpuLKz7wpiFD2nKmhB7du6WdS84TfcWdiRpNtdUyrC5QCAZ9LunIGZyrpdysJXvW9vso9hlYsnQIHifd7stelXAF1uozDe2tb1HWdH5q5D9OPzr7G0RgOsLHwQcT0VZTppEdS/pRcqJdGmJV4sfmLwCrWnsoudbO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "dd9e7d76-c668-11e8-ab05-a58b2a1e1cd8",
+    "eventID": "f2798a9d-e28b-42ce-b249-f6cad8cc56e1",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUUFDMS7K7",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T12:13:11Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:28:40Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJUXZXHLNLA",
+            "expiration": "Oct 2, 2018 6:28:40 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDLwIQaTgaGokZtJIhiL6AVszvBDfqo65SbJ/o+ooxBwyQYviB8ke5oGp5I2H2IdxrXjOLQWnD587t263WjLtzECGFGGCkGqVezEsa+kgiTv5eeEJiCKgX7FEQn4+VYOXMM43OZEi1BeQ1QLDyoSPWXtsKbF6JlW6huiUlQXYb45iJQI+cvdJiODjlN+UMY2oe0zvMvZ2IHAZqazYZccchxMwuXVcWjLClrMdStV8H4q/LJwZYN1oJhQnr1L+c6hgr92DGvHvmRFCmUe4ljo07wdXAwNKFxUCmulspG4RiocmR9/19jGIDwoM5RwjggmPxmZOO5l/ktjI1yLeAp1haGqpfq2jwVIXv0EoyNXO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "9ab12855-c668-11e8-a5bd-4df0553a7eaf",
+    "eventID": "cbf0d92a-01a1-40ae-ab51-5a7d90e141a2",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUZEELSFPK",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T10:12:54Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:29:32Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJU4LHJXLEU",
+            "expiration": "Oct 2, 2018 6:29:32 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDC+oYN2iRPw81QeRmiL6AadwSknG2BW9cuAYRaKQCibrM29v9rbg7b/jyZmtpd0MVEiNfHq6LLyUbw8wFDus4gmQOAY0G2WfdAhLoIz4mqmuqpjn0LYTkRcrdQa79XOV0WSEzEINa7+QzEIdmSdZz3jF7vTBgDp/mbpwGVsSybtu0XYhYt7JrycItQzqsteW95MCpsmehXC9XSUO/xMPue0tJGcD6jacjGrmp04DKLfw8LtXFbSMOsvO/+dmzVQqcVooJQVj01CvnPd3KlAd2dJgjxPXvF5jqF8VnoQiQ9aun/no9KppYeypr7GvIChLc65cRC8TXcFlRnXUWvp6sjDy9TijM/Xg/YQo/NXO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "b9268da0-c668-11e8-a0c7-bf8843501b08",
+    "eventID": "99da6174-1d5a-4ab5-8eb4-365851aed735",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUZEELSFPK",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T10:12:54Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:28:55Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJU6BVSEVU4",
+            "expiration": "Oct 2, 2018 6:28:55 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDA4OPfVDzQQdGp7zhCL6AX7ECAFEEE3KdTXSt+C69GA803FYzb5HvZEA/KVdAAcQBVo6fvzMG9Gh4NHFmO2cxPHhfJNOmqVs9zc/JoU5jpgxk4j0nj7MqHbOZd6QBHYN4/JtVP6RyshP6tJCMd0C3h5pcgRueq16pyPHtXDeWQQLrTJDUAMF6486ZDmj0rLaCiw9f88i5/oEQVofMZAyQDzoS28pEQzlafAOxWvda20HfupYaxGU6p6vuDgnGDG5BE7sOMaAOIo4GYrMSTy3zEDC/6/WLgtXwsQFcWn91vIcAqAvKL5xhi43qQeV+wCIzPhbQ7sr8pi+mp4QwL1kfL4gwtlNIJKXpJ0o19XO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "a3a5a41c-c668-11e8-b578-7117734510b1",
+    "eventID": "6430c761-f1ef-4189-b9d6-1ac39cea29b0",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUUFDMS7K7",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T12:13:11Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:28:44Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJUYB7KLFCG",
+            "expiration": "Oct 2, 2018 6:28:44 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDFutKrxm3x7sLN2OcyL6AW/AS6+7U/eD0T6A7jhHnKDYeH3/9eh6WjJP1nyNn+HtkB7fQLbIvO54CsADrTI2mZErA8gRPNre5zz+77VHQbnS9u10n8U64YLaavbNjjaWCzxePADvUS5PvJRkEQNoS0CTudxFxpTIrzwTecEqNVs7GUftuEG4N+bLlfYgrY/DH1bam1A37aRckw5pb4LbGWjFiK9sQz2Q9hL11WPatpAF7MechwU26rKGVh6tr690tp4ib0fw8mDOOLdZc0ghSctXblQFewxXMYvGKn/G83Jkrhlz366cWNDn6w0QD8d70fju2Fa56mNvMWxX1qOXIHKAnGfIjuqW7gEozNXO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "9cf8f634-c668-11e8-a841-7beea3311eb3",
+    "eventID": "497c648b-f436-4665-b897-5a256278e087",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUZEELSFPK",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T10:12:54Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:28:44Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJU2MLPOQVR",
+            "expiration": "Oct 2, 2018 6:28:44 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDPcy5lpVwoh73Q7SISL6AVdb3K57PXZ+dfx7+mMM8EC2SByjuCq3RdtTUrWEtZ9jqDpWggEjKoZb0zEiaSvCdNAzGTlVbgTHlL4V/a6KoUHXB6uHAuHlfFuAMAs94aVknUfZsK8dwzZMVoMIXCiR6C1i/1BcPajwwqVfa/ShUiUbae9l84KHQ9jpR+SniR5s/Kd52sfKDYlOSH5C9y2tprEW9Ay61N4hwYGFLIoiffAyhmht7OxFsbvujNzWmnJrdkEVv7kyEn04pSPw4x27rS96ncHxOqmdgbgEvD0dfstVv9DrHRcL1jVC7GpD7eY55cjwQv6kRYm+RouhA4muyw7SvVQnzpn6l34ozNXO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "9d107505-c668-11e8-b631-a51a00ab9405",
+    "eventID": "5e210792-7538-470b-ace6-e2890eed5f70",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUZEELSFPK",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T10:12:54Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:30:09Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJU2KLSKH5D",
+            "expiration": "Oct 2, 2018 6:30:09 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDMSyo+APQCwFIZ5M+yL6ATKhWUVgFcJHvmJ60IIc6lsMGWu1LB4lYNc0ol4tU5ho9aNuqdyWD1wAIhUvcNoWsZU01/F9SI0FQ9+yZjIus7A1RMhyxr09xWrB370a0Eq01byUwI3sVU4TrApAcMy5SNxvw5BheBVH4AoLlUzC7+i/mVGUgHqhRXq5yukHBukFqvPb4KMKU3M65wSglff4DAtn16/Hx8RAzqVM9G1F1YIiYpEKG//qeD3QGC3aC2VW7xCIyc6UiZ0reDZfhhdFe4z718RqctZ/zPKfjWH3yTZiVM2D7zopUJdtRBY33OMr9tUQUkZQpi6dVLCxxFPLctTaumM2RetEQLQoodbO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "cfc7b4b3-c668-11e8-90bd-c3f8e018ae4d",
+    "eventID": "65b3e4f0-4215-4789-9aac-16de19df2148",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUUFDMS7K7",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T12:13:11Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:28:42Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJUQG5FTFMR",
+            "expiration": "Oct 2, 2018 6:28:42 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDDGUhqvoovToXzeAVyL6AZbhltKtcIkD1ZpA8j6y0bDRI2BoMTJgHWOxUT7fThZw7bBsQ8lYO22gz/UD0OBcgvg7SI8E4eD2huvZL7xUqCK4Uc0foMo/hpamRxGfAdJJ6WqfAnge06d8LWksRB6Gkay4AmjwidhKfQVRhyj/m6ggkCyaKrAmqFY0COSb4uglxwThxx7uj3eMhlBz5U6848SZ4rJLQ5b7oehefrQxpgty3pRxHPv/tN2uIBVPzE+/fT2Zsit87rwNC9K9jBVjwvoKPSksfVpCy5d+yFL+tygSZuD+Y6ZNThGqHIgqUo1ZkH47EQec/Gc3eR8wKBubMeHkWBkoq5vx3CYoytXO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "9bdbc670-c668-11e8-b5fe-c91fc5cd1f71",
+    "eventID": "8329fd40-05c7-48d1-ab3f-eec9ac23f543",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUZEELSFPK",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T10:12:54Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:29:30Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJUQU3XWNIR",
+            "expiration": "Oct 2, 2018 6:29:30 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDATP2NJtjPCD6ddb6yL6AdEFR8rBt8Vyr59+E2x47e91eHXximcBK9EC+e1p4qrqSKk0db88tGB01dRJpz67D4I9iFhFkkUubiPwY4Ge3bBKaSkhNdOuI732l6wQy7Zme3Qjs1fwRGKvnbVBzAimJGGarhc/qtNXcn6rrF9mQp/PcyX5A7GD9/nyjXLbiNEOGpxDFJ3eJctFPBtoNyLOvCG/WAYkA5PABFz9+DvRqpCAIIpub0mKS9R7NG7r8nPbWKdcZUsWbwEVyOz5KMaX0ZvNnSSGETGElxd7m7bn43MV6j0/YIpgQe680MqEhARuEWh4/hxxugbd9O5wXixyvWinOGwUlRirwh8o+tXO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "b80b321e-c668-11e8-b578-7117734510b1",
+    "eventID": "d60b4e14-d809-4157-9e1f-58fd5f097360",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUZEELSFPK",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T10:12:54Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:29:40Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJU6LWBT3SP",
+            "expiration": "Oct 2, 2018 6:29:40 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDGp0v8rGdL9STxw6nSL6AU3babX6CWcPS8Y7LMDThVJxQnsmvwtbQATrtz8kC9BTApRQybE1u196F2KxiQknuhmTELksz4tx1NYnCyASHZ9zp3FuIPSKBKnBThrkYwp3D/vu02zF/RFNzQKjJ/6GVcUv02nEKfv0MYQxIu2gn10hVkPf9oSjUHJy1VIhA18b/JIyIE091mqWY/VKWeRGmvIDx6QBL+xCcSLMaXDU/40x6QGf85VzU5FbZwJWz61fNefsCNj7lb7MG5Ip61D96U0W0rR68RpuLlSBIjvhqZFCBtCFvlyMpiQbbpKzg3LGg9AfPpTtKso6LGis7A2pAmJuAquPui1rGqsohNbO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "be4792c8-c668-11e8-b578-7117734510b1",
+    "eventID": "ca2f3ec7-e19a-4476-8c6b-df45dab04218",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAJBQR5Y45EQV2KQGVE:centralized-logging-aws-elk-LogStreamer-1A8C05O7FJO1W",
+        "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LogStreamerRole-ZE20H30UEKD/centralized-logging-aws-elk-LogStreamer-1A8C05O7FJO1W",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUWHT45IUL",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T15:54:08Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAJBQR5Y45EQV2KQGVE",
+                "arn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LogStreamerRole-ZE20H30UEKD",
+                "accountId": "120270496361",
+                "userName": "centralized-logging-aws-elk-LogStreamerRole-ZE20H30UEKD"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:29:10Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "Decrypt",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.238.239.91",
+    "userAgent": "aws-internal/3 aws-sdk-java/1.11.405 Linux/4.14.70-67.55.amzn1.x86_64 Java_HotSpot(TM)_64-Bit_Server_VM/25.181-b13 java/1.8.0_181",
+    "requestParameters": {
+        "encryptionContext": {
+            "aws:lambda:FunctionArn": "arn:aws:lambda:us-east-1:120270496361:function:centralized-logging-aws-elk-LogStreamer-1A8C05O7FJO1W"
+        }
+    },
+    "responseElements": null,
+    "requestID": "8680b08a-7049-4215-ac35-4db7ae620e10",
+    "eventID": "86b1904f-3831-4732-b6ff-eaf110dca8f8",
+    "readOnly": true,
+    "resources": [
+        {
+            "ARN": "arn:aws:kms:us-east-1:120270496361:key/8244acc2-ac0e-4f4e-8759-acd6e7aa0202",
+            "accountId": "120270496361",
+            "type": "AWS::KMS::Key"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUZEELSFPK",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T10:12:54Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:35:56Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJURBQG6WFH",
+            "expiration": "Oct 2, 2018 6:35:56 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDKoQ4TpFRTnXuXFLtSL6Ad5XdKkSgzYfVwAam4wni3C/Gzkgba/GEu8vv6g/neZyyBYuyxJbeI6ItMHWCOF4ZniMsLkfBp7OGtSoKKP68d0y5bEij5eP3+U5TlmliiDO7UwStcWWcytlBgy75W/8Ox+bPdFxMgUkTT/wtLAh43vCH/Q8aT3yVjs3SSWPpgbZgg+WFUEwWD7XxRqwGH9rq/fmZafFp8VgUTrv5BpHWAiSNGcwZAOCT9YDq9nFEPa63gB1CnUdH0EbZKeyWbgRW/ENdNI+d3e0EuRpGji3tpQ20OHvmqaoYIKfJ6TzEYhK//4SGmYHl4EncOwyJYjkXtrYHLuKZceL+OYo/NjO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "9e7fee44-c669-11e8-be1d-97577e4c3914",
+    "eventID": "3081cfe5-4c13-4b35-a577-2d3264ffe2a3",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUUFDMS7K7",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T12:13:11Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:35:56Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJU2LGQETEU",
+            "expiration": "Oct 2, 2018 6:35:56 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDJol+aZPylanTKKfJCL6AYDY+OEWUYuWAPwiEUAptymhFJHuua0evs9GKS0M3E9O7pCiw3iAUH8lDd8nviC+KAlwLl3BbIyEOsN8FAN39xNc5kZMCXELUj1m9wtnrR8/s7yN8xRrdzirucd1dg89s2NGI+/HqpdKYNQCZl9bkcPDRREVZ4RG8CQNm6ODNqqHWkWJUl9Jd7MbW/v3r2ZfS1X71hvehjhftXNzU0olxCxBYfAFxIGZDSKlVvi/hEHJJPON02Dg0b2wbNFvRwFrWkO/YtVh8xPAK25tJ2OuLo5UDMXzys56rB59UawV/iH0/q/P8628Hp7OTAp5gQxliAxzNXd3+KMyY/wo/NjO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "9e8ebb61-c669-11e8-8a6b-5f9f1c0b85a9",
+    "eventID": "cdade8f8-fecb-461d-9470-8d58f1d5a199",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUUFDMS7K7",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T12:13:11Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:36:15Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJUQLIEW7GU",
+            "expiration": "Oct 2, 2018 6:36:15 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDHWP+UbQxZeR12UE0iL6AcCyFfY7zj5WwWR5ulYEV6UOqoeVdtFiYpaIix8UmrvGjbYzIV5Tt8hL7vARvZowy/KpiIRHFSS2rQYN7N0xYzWSl5Lw5nOfvwlwYuyuEdryktjC4XzDlAImS2HZITGFzsqFySpqXHJ/f/0MYG5smIZ+hD6eg0lTm5vkKmJo5THMJ49PNM/JnwrDsXg6uNsZ7xPut/nB0U5dx6b8hpevOS4TscyLU5FIXdK7cFZ/gzf9DjV08YdUZQfQ96Z4MpjOaG5uX8JqFOccfpY90fGJKMZSwtrPbw1ZRfy64AL0LhBSXAupo/SKvXbTCOGiAYw3q0Vgq8Lqj52TTk0oj9nO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "a9b13a59-c669-11e8-92db-1b9c0e94a4b1",
+    "eventID": "255e792a-a4db-444e-ac3e-d6cd3f0951e4",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUUFDMS7K7",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T12:13:11Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:37:50Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJUWWQ3MZ3L",
+            "expiration": "Oct 2, 2018 6:37:50 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDDtcjkZZcpksalJDziL6Ae0c1nEjRknoIZO6968XwY5O0vHaV2PTVklCDiMSipzKleRUEI9GIHGIQU2DrD+f1NMkbFclyTcGp835qjWmm1RSnS6gtH5TmbfCCWHkFGproyyGwoQFqFtkzNWe8mdVwnCUW+eau2n/Yle11OBPVX5lB6cohBzTGDQwADpIZhK0v7nbawd+eL7W+rkI/Fz5Nu44FiLKJLWgc50rfmQWrHNpf8zu42sZGV5zo25BqRoLhvVTtUXqUo3Lh4l8V0HPdNQZXInEe6lnDnZEPEo6/XU4xR0aXWpHOooN1Ty44bMLycki+aXfhw/Pr9a4B8UwFfrAwMshKJlZrioo7tnO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "e201459a-c669-11e8-9daa-03ec6f4111f0",
+    "eventID": "b455d5dd-50fc-410f-a473-dc6661fa8154",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUUFDMS7K7",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T12:13:11Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:36:48Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJUWAP5FFE7",
+            "expiration": "Oct 2, 2018 6:36:48 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDKcFOu1iZF2yJJYTbCL6Aeh868iChKBwSTAGmFmKQXNJn1pA64cAARfSzS7SjD+H7P0YN5hBlymLbmL7dw1ib1Q9Cfp9FXEpJqNRMJDO9IK77Ea5CNMMk5NGKdie1u9kNK+TV7+K40mrIfQ12gszyjoi7lI3/zxRxTloxxRR0YVFQKzmxRpGOjPeA0RsvrzBaXLZEFVQv8YkIr27kU+XWwqvenq7Xwcy6BcaWxZY4MWBkIecRiGAqJNV+3PHu3YfZYe6rkDeUnv7RuwV96OZyeGwrMNLX4BdKeNgheSKwvNyEu1A11pDMG1ldqAojwgugZ0utDK0UrWnY3rHV40fgMUOFu75zrQK7fQosNnO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "bd1c8a5d-c669-11e8-adad-f31ae3f4dd8c",
+    "eventID": "a1c03b85-116b-4990-84c1-bd24997a7cce",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUZEELSFPK",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T10:12:54Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:37:49Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJUYW2VDBBM",
+            "expiration": "Oct 2, 2018 6:37:49 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDKmWZsybDzok2+I4qCL6AT2XVrrjg9FjmguF+5FU8VNmaA+ibLoIGLefMcRiC7X4u3gqQqHTdi+KYhsWZbiEowFJIaXiU5+7VXWPGhqW43kQVbYD5MNpi5vuaCZcrvOo4eLzlR2JHngSPlMsPUEa1q+nypQiQqW+hbLITojiGQWivMmfjAH9tai1lJjSRFqp0Cj4l7V8epjBVfP+aed9Ifyc+j5Mh8d7Mf5YDcXDDqesm6nX6I3Y9PKxKFTI8y8tkTxVGtMU/IZ6Km+D+ESlzwK3ZRMM2ZxmOddFB8fZwU+UgHepXh41Gp5/S9UiBtsYDDJVo1Z623Ptlok7HslTiG90o+HO7liJcdso7dnO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "e1da5d88-c669-11e8-a45b-79082411be16",
+    "eventID": "0dd0deb5-e761-4b5e-a917-1f003c150fd2",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUZEELSFPK",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T10:12:54Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:37:55Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJURQI6O2VK",
+            "expiration": "Oct 2, 2018 6:37:55 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDDTJ6ZAod0mjbOxF0SL6AdJaWtF1o9F9U7WbAS5u5zbHyVwtvOxKxtS0pPvek3QNmJpzpuRktKk0/imwS5xUGmcfFEy1N+z5vCKOmBYpPLaauTVoX+ltG3SajwaqHBTo6sS5UtxpASuGKrn1CU8hyTX1+99fYphgyRZbcMQZ8P8rO+QRnQDbJtBKuhpQDCRILhC7f/tnTY2LPHLrWncj5G1Sc3FfP6x/5n5YVNZKJ+Og2rwxeFXpuOkBN84gMiNar7oYTBYmBjSft3pPo4A6Sghq1FASfirqywVq1T9iYzl0s+CwSzOgv+iD2kfk40RTQAvurT0ZuKzVIo92/P5MHFQr2NrgRLzbkVAo89nO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "e539dc31-c669-11e8-a5bd-878edf137cc1",
+    "eventID": "46758b9d-ee53-41bd-a166-1dc4279feb84",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUZEELSFPK",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T10:12:54Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:36:48Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJU6KO5KDQS",
+            "expiration": "Oct 2, 2018 6:36:48 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDFkn2eGa3AYor59scCL6AbjC0wXOZJexWuEnLYg02yp9aH740ORUMXcJRC7me7FBBhllfT8VfJmcJgSObiDkgRlDxRxdrTPw3Lv35RaM6GL+WNE15IY6dkiZhxS9byfgM/iQ6k/aYcnl66tbc23jaOb5QONxtzvjB9PpYB0sOzhjNB3meAC7/BtrWhGKKZbNa5sjU5yLXoNt/aJsVTEmUblJ/g0iuEmKotpikmK9Q0ul1r+EHvKOuElONPN+MYSL5PBETUYo05rI0eX9+5i/rATJwrz2mtrQITmKAagkkYb/7gIMZwDCTcznMIbfPfuFk/qqWw5kz2GNoTyHqLSG8ny2/c3HzP6PxHgosNnO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "bd075506-c669-11e8-94b5-b5c1ecbca8ff",
+    "eventID": "8ef8ca4b-106f-45c6-8345-d5ac3cef2230",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUUFDMS7K7",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T12:13:11Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:37:04Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJU7WCILCX4",
+            "expiration": "Oct 2, 2018 6:37:04 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDM57GqPOZYwEXyRxgSL6Af5sc7fyxAjADf0pRi4yQFgllpLakZWJzASggi/hFtibuoqiplsc02y1TQqUgbveXs8/4eIvifu7TNUjpTX/A1toSosBQiq6/W2vEnEP/ohfwBGAsQ36pff/hDhrekiqB5KFmr9juo8ftUp1p44l0rzQ7p7OdR4gaoy7ShHMSeDhKCaYqC2NLjTbwgGK/wRF5eFMzNTm3hp5UyoNkhcmfToac4BnbNpb68cKsAXfZB76JZC/alSOi8gCnqHXjn+JJWeBz4EAcVMP/lfAQULsaMCsXkKv7wohI8mbo8tKhEbWbrAF2ft6pm0uWZ8HATj2w62Z6ougKOu2RKEowNnO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "c704666e-c669-11e8-a963-ab9db5ddb325",
+    "eventID": "844de053-9398-4be3-a2a8-d1b22eea3922",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUZEELSFPK",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T10:12:54Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:37:05Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJUS4YTHVCF",
+            "expiration": "Oct 2, 2018 6:37:05 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDI7+WXLWq4X8a5pVyyL6ATdMyEHdpa15mJSX/MLnnyH+8rbvTUfkf33XHf2y4G5b9HmeWgYlQJbrCVSH4jNdpL7sfBw7Kw9u+hTRPisi5yooldNCSMmhhV1RY1pB4utcdvFDt5DtVBjfaOhW+Bhpwo7948jORNVXnhn98yYHqdfh14gT2lkyuP9ThrzuuTkuy5C2KpupUdxCQd9N4HpeSXMPYpYl4VO/40TlYmf3FCuVQYtFJVAu9x7cjzwBl7xFHVmlj9gzlt0Ayh7uC66LLCkZERweZyEWnl3x3Nz8UqlAnUE3wO7bbb6lUIvkkdjZ1svJFdGlFh5zZpBGAIghJe+VpR8XcY4TbycowdnO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "c7286876-c669-11e8-b1ad-57961de9c8d1",
+    "eventID": "72696059-376b-423c-8296-588d6b4d7bf1",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUUFDMS7K7",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T12:13:11Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:37:55Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJU7HWWXAPL",
+            "expiration": "Oct 2, 2018 6:37:55 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDC1s2p7Ex6xqNuCVNyL6AUdUB31zUHwQGytGqgFP4fJGbPPkx6rBr16vR2LGhwqxCkAnTPyqkv2+TwVSVuR+Ot3G9phgVUx+M2unIzUOM1BuXtKXUIG5OnWN5SnQCemZiY3/h8scW9llES8vZ00aTmzk1pBVmZNDT0voxCunMg8m+2IDf3wTM0blX/F9eFbQFS9YmCFjMkm+JgGLWWNo5fhW3+zZ9IGYTJCETcxFRL9/Bsk7/OkWKXGQg4KBsmIBb+UicaBmW4F0AEfkPgEdNu81ODlnypwb8kyiEM9Tg3gBJhpG3KL4dxloVyrp9qzckmBJbjvwbsJT/PlE5/mn+Iwrsw4ppjb24Y8o89nO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "e52a2453-c669-11e8-a581-a18ea7cd9f93",
+    "eventID": "247b093d-3467-4bd4-b30e-754f79e7cd3a",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUUFDMS7K7",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T12:13:11Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:36:17Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJU3DHTCM72",
+            "expiration": "Oct 2, 2018 6:36:17 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDIOUES8ZHuE+50VY6yL6AS2eKjqgm1uL1jjhXUKppfeAm4gwbLn24DbQ+1yA2w0KQhNCwXNpBKFkm9T6ApRo5uq4mDPSmztDDXAtJUxPHLY8AbEzC6ewRyS4qtHDRp0nEYIfYAnUFaXBxxqKp69yxvGgUbI3UTViSOyJRPEKq7AaA48/Uzfogxu6by2pQcFZtuqNgYwE3rYxi1SC90Jqq0CZwR1tZe/YdGZ4AfnFjSWft/dVE66hoKSkzABqm6lvwfGDawYRmZUBvjfZ5rPXiAPOAj4kzbNZYpDlcfwyFxeZdpqvHr/yz8po8A86zGF8v7jyHjbFmTqtf23aiR8rrkLKMSYfOZFXSqAokdnO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "aacd0a06-c669-11e8-ad53-93e537c91959",
+    "eventID": "fa689f5c-0bb5-4efa-b9aa-a72b9ba0742e",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AWSService",
+        "invokedBy": "vpc-flow-logs.amazonaws.com"
+    },
+    "eventTime": "2018-10-02T17:37:49Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "vpc-flow-logs.amazonaws.com",
+    "userAgent": "vpc-flow-logs.amazonaws.com",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-DemoStac-FlowlogsRole-1X54AV2JZVWG5",
+        "roleSessionName": "vpc-flow-logging+120270496361",
+        "externalId": "vpc-flow-logging+120270496361",
+        "durationSeconds": 3600
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJUQOJRJBOG",
+            "expiration": "Oct 2, 2018 6:37:49 PM",
+            "sessionToken": "AgoGb3JpZ2luEDUaCXVzLWVhc3QtMSKAAl5Ib6yKBgZkK0VLdxAHa7Ve3y/tjkTymvm+RgMhFcqdffSR2i2idlolsf+xJr5GJr7WrvfOtYanbtzNhhNQKlA85wU+Unl2wCrAlhL8MBU5evygSFd9vggAKIn2ynBClumteRilm7wWEcOmRrx2RvEsvs++y5SMwAaOTXyw1ZhhGoQqd01vUCF5eBWbiKd3Hva1Q2oQdU3Ix1H8Pcbfu8sQWjPdcY+tpaYK10ZSIeD6pTAaeNJtVxPd5HYgFQQ/ayWeIqG+ZvLjrqeOStNaGZJ0EqzyEzMhvzgMwvok5oVQY9ETqeAIQT3E96ceVyNLrB8+FiUzRpItzOEPxoAPaqoqggIIexAAGgwxMjAyNzA0OTYzNjEiDLsnkmbUXKS2VR6hcSrfASovn0aqYUJvjXLQUsaJ/8P5SwqUVlxHvJM6KRltr/7Dy6imx5Jb7gc7+00GwCbiuWIm2j5cLoDnfXGMlAM4Y3TcQoU1l9wLK+uDsv3Os2uX42jdk/kOVjGLFbi0bZWa5wXtbmO7IoWBL1EBOlTmASt73b+Onx27Z41NNjvnPbeEuWjoRimPDUgYIQmAXQyI+raw40CFeK6PhKou9I2NRePwa2Gle84WZF5fRua6QRN1ROP5CRds0FdvwqYNAAB/PV7C6nnotg2KZ3aQMk3sz0evOoVA4XCcsLWniMvs/VAw7dnO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROARYAFOEJUULO4DEGY:vpc-flow-logging+120270496361",
+            "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-DemoStac-FlowlogsRole-1X54AV2JZVWG5/vpc-flow-logging+120270496361"
+        }
+    },
+    "requestID": "e1e72e8c-c669-11e8-92b3-338831d9369d",
+    "eventID": "c445c540-7941-443a-8427-724f5cc74e48",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-DemoStac-FlowlogsRole-1X54AV2JZVWG5",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361",
+    "sharedEventID": "98bfc4d2-e82a-49d0-86cd-748e3c3d9172"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AWSService",
+        "invokedBy": "vpc-flow-logs.amazonaws.com"
+    },
+    "eventTime": "2018-10-02T17:37:50Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "vpc-flow-logs.amazonaws.com",
+    "userAgent": "vpc-flow-logs.amazonaws.com",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-DemoStac-FlowlogsRole-1X54AV2JZVWG5",
+        "roleSessionName": "vpc-flow-logging+120270496361",
+        "externalId": "vpc-flow-logging+120270496361",
+        "durationSeconds": 3600
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJUU4JBRECF",
+            "expiration": "Oct 2, 2018 6:37:50 PM",
+            "sessionToken": "AgoGb3JpZ2luEDUaCXVzLWVhc3QtMSKAAj3kmKAKtwzrRl0C7ufPqKholEBuDbVpI4jWf3uEXa3Ocv/Cp9Bj2VNO4Ho5aIITjozJps0uy3lztR6zPLktidw6WGaCfzBDCoBlGHgym7oKQeEcIUS1DS1+oJ24YRNRVvkn3jXwv0y5JQtBK2nlykbkWskxc/qjwZTS17d4MGSJrRCcjsr6SdsyXlD1r89hB/XClanGGPPPZvjrZd+ann4/hsivmoF1lhUGyKD3XSyuIa9/J+KS3idOZ6h/GoELzCtVKxB5sZyLQun91BPjjLuUDoZcC3WoSwWGv5jSR6vWAXzqgjAeGb3Rzb5uQv+D5+EslpETjQvjyMgjePNXsNUqggIIexAAGgwxMjAyNzA0OTYzNjEiDKkpEuFtKy8TaFUdqyrfATXfEMxD9iwiJPrs0w2vixKKLh86939C/QcE8dyS5HxtGqAShZghLk7sPSwGSyOn9yt2C1lI3zrw4801wieGyrCOqCtzVotnT52dM9GEm1y/0pJGckt9vDPW8yZwl69Y43W4n+qQxf/s77rt+Btdn7OEcq/cSyiFDylrZmF8OgfRDkyCEzjb3Vzjj/5uUQbMleGo2PuqM18tNt55dVibuuZMY5sl5dYmqUalziRnottetq/9Kp+wIANfgAvjviDigbYHGy2XFw3TNu91L3GeNkgtahBQBM9hhEpY0+NjXTkw7tnO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROARYAFOEJUULO4DEGY:vpc-flow-logging+120270496361",
+            "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-DemoStac-FlowlogsRole-1X54AV2JZVWG5/vpc-flow-logging+120270496361"
+        }
+    },
+    "requestID": "e2239b29-c669-11e8-9ec6-cf0778d548e2",
+    "eventID": "ce86bd14-a50c-4885-b24f-9c0c0ea28776",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-DemoStac-FlowlogsRole-1X54AV2JZVWG5",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361",
+    "sharedEventID": "fad44f77-eb59-4afc-bac7-e2c9c50d64cc"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUUFDMS7K7",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T12:13:11Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:43:27Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJUXOES2NJB",
+            "expiration": "Oct 2, 2018 6:43:27 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDOY4h3Z6Cm0RErJz0SL6AZKjn7k0gCL53wM73SeteaBt3gSY7n0rg8JN+QJRmaNC1BRbpYVqokH1svEHY8cvZd/B5+eMBwmgXG3jTYFRnkwp2tt+2hECWA/fwdg4AweTmP76oQwONF5WGvJgqyic5tUrB8nxcY0jONUxPvVGXIvW87GyA8r9zgdAvicq9iymonvaCV0s3NsJLezqtQh4nhGohn2DCZ55kW9Y8JZ5Kw2xhkxM4yT67eiRzxvJDezaYKInrTFjJR869BCAi/rG6cGXARQXxA2JfzK5+mXh6NPVjaBIwFBguxOJa5I+H23f2RAjXvLuOIq0am2rs/m83rpruY7FZU3PSzkov9zO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "ab352552-c66a-11e8-9d84-33a6bc8879bb",
+    "eventID": "3e89ab3d-46f2-4269-b8e4-455a2eb49594",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUUFDMS7K7",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T12:13:11Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:44:20Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJUTS7C56VX",
+            "expiration": "Oct 2, 2018 6:44:20 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDM3KdQBfSHZ4Xw3vdyL6AT83IlNmnZYdTwMDAXStlw9rm/vFhJ3qeVkVLrKGkZ5LPh8+jNQ80sgLkCD9L/hYUIjoeP5DGsBXyqbLzNAaq82wB0vyLbSmSzj3TFmUNKgf6cae51fmR7U5zdzC6cY/Cz46pAVnUhLRAQBP1LtszRWZwck7BNKD4O1Jnzd4CDiLilhv3IFpdTBugHa7Y0Uz6RBMrfj/BivAxFBoNRvyxmOUTrZXb8HB9nMlhNI19sKJXJ89R+CGaI/lqit93s0txXkh0I3P0KqkVSmusi2u7oxF2gYhpJivYv1kCGDdBdy0sQIockoxdZh+0bi+JSR3KDeZ9QutJnDEnVUo9NzO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "ca70e784-c66a-11e8-a5ef-150ee697db7e",
+    "eventID": "c3b353dc-b6a2-47d2-b97d-6f19adb7b7e5",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUUFDMS7K7",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T12:13:11Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:42:27Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJUVJYWSYKS",
+            "expiration": "Oct 2, 2018 6:42:27 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDEOFnOOMjy3HhTvvvyL6AexglmKMq2d4maSY1OfqRSEldjQXGKDpWeYVboDuTi+tjKVcKvn3qUx4FQzoM4bwy+Vhf1exX1RYHgVJ4GW+EQi30igedX/pG7iL3VD6Gv+I1oR8X7IJ7iaHVBbG4vl9xExNsvLXKXcbSxZa/78A/zj5E7Zgk2wPlwEM0jXByAeL7fPX9nTmr7V674Q6eZK4/ucv46TF47E06uPfHxdHxuHZregHKwVxvxXUX0MM7PgZeIM9qm5Ki0f0OHEbq/0D+E+lagzFoDieDs+Qh9BsMCylMS9iyyM4EQ2EoKQEQIo8fp2RoBNNfH2NcF/TRSjW2b3yS8sRk06+CCwog9zO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "879cbfd6-c66a-11e8-a5ef-150ee697db7e",
+    "eventID": "c8dd55d8-c17b-4bcc-a774-3d8ede64cfca",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUUFDMS7K7",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T12:13:11Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:42:22Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJU5DPESGHQ",
+            "expiration": "Oct 2, 2018 6:42:22 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDGfYslh8H3NZavkBYyL6AYAASS4hwIyBQOVE6DtRJGDegVrv+Z9YhVfBP1Jt8ImmliRQ0w/LyoRe8X4zxlBMDYaRP7jz6BOvVoLb44HQKK3BlHXYcNIHbkLnprvLLuYo9Ym1D+PNJL3exVyoM9Vhvoif5dYGYjSTzeqByXo8Tn2HuXJHull+1a66MNagP1osJPVQNiFnqlkA+5G7DRD/bSz2/WQM1xfET4t6p0WBhwitkk2Q1LxmgX8Fc7Ex0jqm2WR3NPITWi0ULUDxM5eKj+5y4zVUTnsey8bOoIAK0RE0HR4Sc2OWh3eTmU1Bs6LDwuxiEJ5zaBCzCK5sMxNwMSWP12O3GQkSd/Mo/tvO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "84747e46-c66a-11e8-ab12-4935f52f747f",
+    "eventID": "031bd0cc-ecff-40c9-bb5a-c9a0472cef87",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUUFDMS7K7",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T12:13:11Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:43:26Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJUSGVDTLGK",
+            "expiration": "Oct 2, 2018 6:43:26 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDOMFYCMnHSBogX13fyL6ASUp19fcqAnKULuWgroQ2L39MPKInv95xuTFtnR39qjp5urqxk+FKxFL/WPf9FwJcedBb1GHWxIdoBd15OBtDlkydMzFTv692xLU2ajKJm6/wzO73M8BV7/lsNFAKJ0LSTFKVYAWTHG+JVVrCEw5Qvig3CPj/b8g6+oED08ZHT9LBvhcZKQrugQi5Yf6rWTqWiGLdTXumq2ix6jCH7jDet8ar+FKWfyKr7a8qWEXHav1JwpZPs7MblOcJobQogrsrhG2UZZgk/kJOcRhwlbc4esREKIFcgBfeyN6SXh9ItRTcObeWsZUyPyduGmWiOFypfeii0Zzj60WsJwovtzO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "aa940385-c66a-11e8-a466-294439fa4973",
+    "eventID": "d6f71104-a311-4eab-a8f8-dee097ee0443",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUZEELSFPK",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T10:12:54Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:42:22Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJU7BSCVOPR",
+            "expiration": "Oct 2, 2018 6:42:22 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDAk50SaFNAQ6aj4ncCL6ASB1vjCkB4w9rcjnOvfSYqb2MX+wEAmxkZgvQAqxcNoz2m5Ob0kREua/kaX0qsGiErdN+HIVDEi7KSGq0OjpgaEjZPM7IUtt82f2fx+ELjyHuyhRZ7rT8bhr40TqmXP/kVq+IlqweBTq/EfxeDCHTssuKPSmoa75I002Du9TosDkrTK1eHmW7jtG6/Nu0NkHiBz7+GFxGxVgAA8AZwJy/3jv65nYt421V/CWerkjF5qgPHxTXJE4KX1pUhGcQewoLEVItEqLVfk0YhRVreHDileTk/SWXE6M8Wf9enISfZ76jPXLvJs0Tzt9f8jvtJKpuI5+PPOjuCrosBgo/tvO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "84745775-c66a-11e8-b558-d1b9acf65c0d",
+    "eventID": "0417be75-0e83-4631-bbdb-38aa509959df",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAI35KMEKWWRPHEK4WM:my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "arn": "arn:aws:sts::120270496361:assumed-role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1/my-centralized-logging-spoke-LogStreamer-1C57F06UQGJ7K",
+        "accountId": "120270496361",
+        "accessKeyId": "ASIARYAFOEJUUFDMS7K7",
+        "sessionContext": {
+            "attributes": {
+                "mfaAuthenticated": "false",
+                "creationDate": "2018-10-02T12:13:11Z"
+            },
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAI35KMEKWWRPHEK4WM",
+                "arn": "arn:aws:iam::120270496361:role/my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1",
+                "accountId": "120270496361",
+                "userName": "my-centralized-logging-spoke-LogStreamerRole-1LBGUSQ9SL2Y1"
+            }
+        }
+    },
+    "eventTime": "2018-10-02T17:43:23Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "34.201.56.52",
+    "userAgent": "aws-sdk-nodejs/2.240.1 linux/v6.10.3 exec-env/AWS_Lambda_nodejs6.10 callback",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+        "roleSessionName": "120270496361-us-east-1"
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJURUQVWHAD",
+            "expiration": "Oct 2, 2018 6:43:23 PM",
+            "sessionToken": "FQoGZXIvYXdzEPP//////////wEaDFUBE5EdbNL0VqAiUCL6ARwzJEpt+EmFg/KKRS7KnhV+tbxGh8HcVatrKaPgQkQRAgkCLzPhX64JQ7fkU4QT1H6kCuwcEGw+172EGW1oqSS1/R5+LXFRNCwUQYuIMsKjckEcoO2fOJbst6qqmPv5mtAn1j+A2Ss26WU25ermp06YTi3RgSawma/VQj6KttJvMLQWgl8b2clxq+8+JPMkdc7tg8fVv4/lfq545PCu/Xq+xe6oh32eOfAh9N+mr1JJuDQVSj80YdpZgC7kpSr8vgwSJvfxNkBWFpKPYBjg2OLwct8lKCJFEr1AgPpw7C72JBIVp8XHNZ3vAw3QoFj/RsjbJjjhU8VsLMgou9zO3QU="
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAI67Y2PYDISZHJIMKG:120270496361-us-east-1",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55/120270496361-us-east-1"
+        }
+    },
+    "requestID": "a8e56900-c66a-11e8-9dcc-2355b24c665b",
+    "eventID": "47710580-52d0-4eac-8582-a2e6061b34ef",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-LoggingMasterRole-1ARPUU97ASP55",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361"
+}
+{
+    "eventVersion": "1.05",
+    "userIdentity": {
+        "type": "AWSService",
+        "invokedBy": "vpc-flow-logs.amazonaws.com"
+    },
+    "eventTime": "2018-10-02T17:43:17Z",
+    "eventSource": "sts.amazonaws.com",
+    "eventName": "AssumeRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "vpc-flow-logs.amazonaws.com",
+    "userAgent": "vpc-flow-logs.amazonaws.com",
+    "requestParameters": {
+        "roleArn": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-DemoStack-FlowlogsRole-1IR9BU5GV3RR8",
+        "roleSessionName": "vpc-flow-logging+120270496361",
+        "externalId": "vpc-flow-logging+120270496361",
+        "durationSeconds": 3600
+    },
+    "responseElements": {
+        "credentials": {
+            "accessKeyId": "ASIARYAFOEJUV3R2JU7Y",
+            "expiration": "Oct 2, 2018 6:43:17 PM",
+            "sessionToken": "AgoGb3JpZ2luEDYaCXVzLWVhc3QtMSKAAmnKFDk98uXM4vGJ8QqPAZsJ0BmKZFJlXpdLLvylhu1kAEuXE5GkZKnLnKlXVELM8FovBdGK12blYUtlv1JYQv8ZY0YMKu9H/BnHMkCmBznqUKpLV8UA6ZcWvsl/7ePlzKmEC1LyjwCJPZ7rvi4mG0r8sanlBjHKBLSmwt2zC7rITAGFXWYoWIuK/ee5mbiB/nQz4uKd0FmgZOBWDI7noYAyA5FEpQJ5fYnkPjEvnrhxAXyWEoCUxe8SDEHe0DlKHjwvAOtxW/xLPxDxrx3JViEL+9JjwxXjbtcf6B0nYej2yYHNy30nnyQpDVYIy9bwKyB9gIhuKtdFzMP/ylUFFzwqgwIIexAAGgwxMjAyNzA0OTYzNjEiDA9vqTF1UJK/3OR2lSrgAa1scgncaHdAVqif24z+KlqwRiHAepzb0c5Jm51K+MUIs5YQbU5c6ArwL6Y4ymIhUB32AaMStcIlnF/NaLfmapHE6aaL6T5c6UlzI+qXL2Ru6/umc7eXUv9XwIeFjewnkumr9Tv/4/HfOKWF/bhk09ih9NjipoC4wsRi1jKE+TIap6zPHHsMJqasy2l8PIKWPlLZJXFylPo1pFSXXsrMvrxhI0qHnTOfALKeZRWhNWzLqlPDTL3+dgwH6MScyC9jNR1hGIFcu3NyoOGZQ5Yt3AQxr2m/ryRzCcxdeGl1xC7vMLXczt0F"
+        },
+        "assumedRoleUser": {
+            "assumedRoleId": "AROAJV2CHRCYBGPPT73Z2:vpc-flow-logging+120270496361",
+            "arn": "arn:aws:sts::120270496361:assumed-role/centralized-logging-aws-elk-DemoStack-FlowlogsRole-1IR9BU5GV3RR8/vpc-flow-logging+120270496361"
+        }
+    },
+    "requestID": "a56b367e-c66a-11e8-ba16-71ad2f622113",
+    "eventID": "4293820e-b850-48b5-8007-47dbefc551a1",
+    "resources": [
+        {
+            "ARN": "arn:aws:iam::120270496361:role/centralized-logging-aws-elk-DemoStack-FlowlogsRole-1IR9BU5GV3RR8",
+            "accountId": "120270496361",
+            "type": "AWS::IAM::Role"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "120270496361",
+    "sharedEventID": "e7bcacb8-08c9-4a0f-b414-89a99746db58"
+}

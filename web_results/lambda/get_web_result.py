@@ -49,6 +49,27 @@ def get_command_line(argv):
     except:
         return None
 
+# --------------------------------------
+# Update app status
+# --------------------------------------
+def update_application_status(ec2_status):
+    try:
+
+      params = ""
+
+      if ec2_status == 'stopping':
+        client.update_item(TableName='ProbableCauseMaster', Key={'ApplicationId':{'S':'1'}}, AttributeUpdates={"ProbableCauseSummary":{"Action":"PUT","Value":{'S': 'RB'}}})
+
+      elif ec2_status == 'pending': 
+        client.update_item(TableName='ProbableCauseMaster', Key={'ApplicationId':{'S':'1'}}, AttributeUpdates={"ProbableCauseSummary":{"Action":"PUT","Value":{'S': 'badapp'}}})
+      
+      else:
+        client.update_item(TableName='ProbableCauseMaster', Key={'ApplicationId':{'S':'1'}}, AttributeUpdates={"ProbableCauseSummary":{"Action":"PUT","Value":{'S': 'healthy'}}})
+
+    except Exception as error:
+        print ("An error occurred in: {}: {}".format(inspect.stack()[0][3], error))
+        raise error
+
 
 # --------------------------------------
 # Get app status
@@ -87,14 +108,15 @@ def get_application_status():
         raise error
 
 
-def process():
+def process(ec2_state):
 
     try:
 
         # print name of function
         print(inspect.stack()[0][3])
 
-        get_application_status()
+        #get_application_status()
+        update_application_status(ec2_state)    
 
         print("Execution completed.")
 
@@ -115,7 +137,12 @@ def lambda_handler(event, context):
     # Initialize
     initialize()
 
-    process()
+    print('json.dumps(event): ' + json.dumps(event))
+    print("event['detail']: " + json.dumps(event['detail']))
+    print("event['detail']['state']: " + json.dumps(event['detail']['state']))
+    state = event['detail']['state']
+
+    process(state)
 
     print('fin')
 
@@ -133,7 +160,8 @@ if __name__ == "__main__":
     initialize()
 
     # Fulfill Request
-    process()
+    # running, pending, stopping
+    process("pending")
 
     print('fin')
 
