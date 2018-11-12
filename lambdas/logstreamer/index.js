@@ -16,9 +16,11 @@
  */
 
 /*
-* Altered logstreamer lambda, zipped from root directory (where package.json resides)… uploaded to lambda directly
-* >zip -r updated.zip *
-*/
+*
+* @mdfBit Updated: 
+* altered logstreamer lambda, zipped from root of manifest… uploaded to lambda directly
+* zip -r updated.zip *
+*/ 
 
 'use strict';
 

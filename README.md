@@ -127,3 +127,5 @@ Re-install
 export SPARK_HOME=/usr/local/Cellar/apache-spark/2.0.1/libexec
 export PYTHONPATH=/usr/local/Cellar/apache-spark/2.0.1/libexec/python/:$PYTHONP$
 
+## Spark streaming sample demo
+http://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#starting-streaming-queries
